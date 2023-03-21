@@ -212,11 +212,15 @@ p {
     text-align: center;
     margin: 50px 0 0 0;
     font-size: 14px;
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 .footer a {
     color: #fff;
+}
+
+.footer a:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 785px) {
