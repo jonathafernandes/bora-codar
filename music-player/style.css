@@ -209,10 +209,12 @@ p {
 }
 
 .footer {
+    font-family: 'Anuphan', sans-serif;
     text-align: center;
-    margin: 50px 0 0 0;
     font-size: 14px;
     opacity: 0.2;
+
+    margin: 50px 0 0 0;
 }
 
 .footer a {
