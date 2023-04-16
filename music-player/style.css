@@ -8,6 +8,10 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
 
     background: #0F0D13;
@@ -17,7 +21,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.presentation-1 img {
+img {
     width: 189.66px;
     height: 189.66px;
     border-radius: 6px;
@@ -25,17 +29,18 @@ body {
     margin-top: 50px;
 }
 
-.conteiner {
+.container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.conteiner-2 {
+.container-2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.conteiner .presentation-1 {
+.container .presentation-1 {
     background: #222b13;
     width: 266.48px;
     height: 498px;
@@ -82,7 +87,7 @@ p {
 
 .presentation-1 .playtime-bar .bar-2 {
     display: block;
-    margin-left: 40px;   
+    margin-left: 40px;
 }
 
 .presentation-1 .playtime-text {
@@ -95,12 +100,14 @@ p {
     font-size: 16px;
 }
 
-.conteiner .presentation-2{
+.container .presentation-2{
     background: #222b13;
-    height: 266.68px;
-    border-radius: 10px;
 
-    margin-left: 32px;
+    height: 266.68px;
+    width: 357.71px;
+    margin-bottom: 32px;
+
+    border-radius: 10px;
 }
 
 .presentation-2 img {
@@ -162,13 +169,11 @@ p {
     font-size: 16px;
 }
 
-.conteiner .presentation-3{
+.container .presentation-3{
     background: #222b13;
-    width: 357.71px;    
+    width: 357.71px;
     height: 199.26px;
     border-radius: 10px;
-
-    margin: 32px 0 0 32px;
 
     text-align: center;
 }
@@ -209,7 +214,6 @@ p {
 }
 
 .footer {
-    font-family: 'Anuphan', sans-serif;
     text-align: center;
     font-size: 14px;
     opacity: 0.2;
@@ -226,17 +230,43 @@ p {
 }
 
 @media (max-width: 785px) {
-    .conteiner {
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
-    .conteiner-2 {
-        margin-right: 33px;
+    .container .presentation-2{
+        margin-bottom: 20px;
     }
+
 
     .footer {
         margin-bottom: 30px;
     }
+}
+
+@media (max-width: 396px) {
+    .container .presentation-2 {
+        width: 300px;
+    }
+
+    .presentation-2 .playtime-text {
+        gap: 182px;
+        margin: 19px 0 50px 19px;
+    }
+
+    .presentation-2 .playtime-bar .bar-1 {
+        display: none;
+    }
+
+    .presentation-2 .playtime-bar .bar-2 {
+        margin-left: 19px;
+    }
+
+    .container .presentation-3 {
+        width: 300px;
+    }
+
 }
